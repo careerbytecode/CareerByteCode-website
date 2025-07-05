@@ -1,0 +1,16 @@
+.career-byte-text{
+    font-size: clamp(10px, 3vw, 20px);
+}
+
+.font-icon-width{
+    width: clamp(10px,5vw, 18px);
+    height: clamp(10px,5vw, 18px);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.signin-width{
+    width: clamp(18px,5vw, 18px);
+    height: clamp(18px,5vw, 18px);
+}
+

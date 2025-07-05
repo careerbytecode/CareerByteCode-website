@@ -1,0 +1,23 @@
+.section1-primary {
+    color: #3B82F6;
+}
+
+.section1-primary:hover {
+    color: #2563EB;
+}
+
+.section1-secondary{
+    color: #8B5CF6;
+}
+
+.section1-secondary:hover {
+    color: #6D28D9;
+}
+
+.section1-accent{
+    color: #06b6d4;
+}
+
+.section1-accent:hover {
+    color: #0ea5e9;
+}

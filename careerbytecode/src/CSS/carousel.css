@@ -1,0 +1,7 @@
+.primary{
+    background-color: #3B82F6;
+}
+
+.primary:hover{
+    background-color: #2563EB;
+}

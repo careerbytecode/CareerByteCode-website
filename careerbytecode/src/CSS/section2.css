@@ -1,0 +1,91 @@
+.section2-primary {
+    background-color: #3b83f62b;
+    color: #3B82F6;
+
+}
+
+.section2-primary:hover {
+    color: #2563EB;
+    transform: rotate(360deg);
+    transition: all ease-in-out;
+    animation: section2-primary 0.5s linear infinite;
+}
+
+@keyframes section2-primary {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+
+}
+
+.section2-secondary {
+    color: #8B5CF6;
+    background-color: #8a5cf626;
+}
+
+.section2-secondary:hover {
+    color: #6D28D9;
+    animation: section2-secondary 0.5s linear infinite;
+    transform: rotate(360deg);
+}
+
+@keyframes section2-secondary {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+    
+}
+
+.section2-accent {
+    color: #06b6d4;
+    background-color: #06b5d425;
+}
+
+.section2-accent:hover {
+    color: #0ea5e9;
+    animation: section2-accent 0.5s linear infinite;
+    transform: rotate(360deg);
+}
+
+@keyframes section2-accent {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+    
+}
