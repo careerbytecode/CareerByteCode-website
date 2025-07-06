@@ -1,0 +1,47 @@
+.enterprimary{
+    color: #3B82F6;
+    background-color: #3b83f627;
+}
+
+.secondary{
+    color: #8B5CF6;
+    background-color: #8b5cf627;
+}
+
+.accent{
+    color: #FBBF24;
+    background-color: #fbbf2427;
+}
+
+.purple{
+    color: #A855F7;
+    background-color: #a855f727;
+}
+
+.green{
+    color: #22C55E;
+    background-color: #22c55e27;
+}
+
+.orange{
+    color: #F97316;
+    background-color: #f9731627;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        /* move from 100px down */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeUp {
+    animation: fadeUp 0.8s ease-out forwards;
+ 
+}
