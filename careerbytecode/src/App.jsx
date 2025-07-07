@@ -12,14 +12,21 @@ import Home from './enterpriseComponent/EnterpriseSection1';
 import EnterpriseSection2 from './enterpriseComponent/enterpriseSection2';
 import EnterpriseSection3 from './enterpriseComponent/EnterpriseSection3';
 import EnterpriseSection4 from './enterpriseComponent/EnterpriseSection4';
+import Community from './communityComponent/Community';
+import NavbarCommunity from './communityComponent/NavbarCommunity'; 
+import CommunitySection2 from './communityComponent/communitySection2';
+import CommunitySection3 from './communityComponent/CommunitySection3';
+import CommunitySection4 from './communityComponent/CommunitySection4';
+import ChapterNavbar from './ChapterComponents/chapterNavbar';
 const App = () => {
     return (
         <Router>
-            <Navbar />
+         
             <div className="pt-20"> {/* space for fixed navbar */}
                 <Routes>
                     <Route path="/" element={
                         <>
+                            <Navbar />
                             <Carousel />
                             <Section1 />
                             <Section2 />
@@ -30,6 +37,7 @@ const App = () => {
                     } />
                     <Route path="/enterprise" element={
                         <>
+                            <Navbar />
                             <Enterprise />
                             <Home />
                            <EnterpriseSection2/>
@@ -38,6 +46,23 @@ const App = () => {
                             <Footer />
                         </>
                     } />
+
+                    <Route path="/community" element={
+                        <>
+                            <NavbarCommunity />
+                           <Community/>
+                           <CommunitySection2/>
+                           <CommunitySection3/>
+                           <CommunitySection4/>
+                            <Footer />
+                        </>
+                    } />
+                    <Route path="/chapter" element={
+                        <>
+                          <ChapterNavbar />
+                        </>
+                    } />
+                    
                 </Routes>
             </div>
         </Router>

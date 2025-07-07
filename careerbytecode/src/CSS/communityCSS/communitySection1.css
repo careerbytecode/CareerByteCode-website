@@ -1,0 +1,20 @@
+.secondary{
+   background-color: #FFBF00;
+}
+
+.softgray{
+    background-color: #D3D3D3;
+}
+
+.primary{
+    background-color: #000000;
+}
+
+.cyan{
+    background-color: cyan;
+
+}
+
+.linear{
+    color: linear-gradient( #FFBF00, cyan);
+}
