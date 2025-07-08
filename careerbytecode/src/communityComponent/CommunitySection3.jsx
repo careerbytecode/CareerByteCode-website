@@ -3,7 +3,6 @@ import amazon from '../img/communityImg/amazon.png';
 import microsoft from '../img/communityImg/microsoft.png';
 import google from '../img/communityImg/google.png';
 import docker from '../img/communityImg/docker.png';
-import redhat from '../img/communityImg/redhat.png';
 import redhat from '../img/communityImg/redHat.png'
 import ibm from '../img/communityImg/ibm.png';
 
