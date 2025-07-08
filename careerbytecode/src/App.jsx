@@ -65,8 +65,7 @@ const App = () => {
                             <ChapterSection1 />
                             <ChapterSection2 />
                             <ChapterSection3/>
-                            <EnterpriseSection3 />
-                                                
+                            <EnterpriseSection3 />                                              
                             <EnterpriseSection2 />
                             <Home />
                             <Footer/>
