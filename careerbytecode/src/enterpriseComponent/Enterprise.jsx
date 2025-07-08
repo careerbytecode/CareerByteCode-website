@@ -1,50 +1,82 @@
 import React from 'react';
+import partner3 from '../img/enterpriseImg/partner3.jpeg';
+import Carousel1 from '../img/Carousel1.jpeg';
+import '../CSS/enterpriseCSS/enterprise.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faUserTie, faCogs } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake, faCalendar } from '@fortawesome/free-solid-svg-icons';
 
-const CommunitySection4 = () => {
+const Enterprise = () => {
+
+    const [sectionVisible, setSectionVisible] = React.useState(false);
+    const sectionRef = React.useRef(null);
+
+    React.useEffect(() => {
+        const timeout = setTimeout(() => {
+            setSectionVisible(true);
+        }, 1000);
+
+        return () => clearTimeout(timeout);
+    }, []);
+
+    const imgCSS = {
+        backgroundPosition: 'center',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+        objectFit: 'cover',
+        height: '100%',
+        margin: '0 auto',
+        width: '100%',
+    };
+
     return (
-        <section id="partnership-benefits" className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50">
-            <div className="max-w-7xl mx-auto px-5">
-                <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Partner with CareerByteCode?</h2>
-                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Join our ecosystem of industry leaders and help shape the future of IT education worldwide.
-                    </p>
-                </div>
+        <section className="relative w-full min-h-[600px] flex items-center text-white overflow-hidden bg-center">
+            {/* 🔴 BACKGROUND IMAGE */}
+            <div
+                className="absolute inset-0 w-full h-full bg-cover bg-center"
+                style={{
+                    backgroundImage: `url(${Carousel1})`,
+                    filter: 'brightness(45%)',
+                }}
+            ></div>
 
-                <div className="grid md:grid-cols-3 gap-8">
-                    {/* Global Reach */}
-                    <div id="benefit-reach" className="text-center p-8">
-                        <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <FontAwesomeIcon icon={faGlobe} className="text-blue-600 text-2xl" />
-                        </div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">Global Reach</h3>
-                        <p className="text-gray-600">
-                            Access to 241,000+ IT professionals across 95+ countries for maximum brand exposure.
+            {/* 🟢 CONTENT */}
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-10">
+                    {/* TEXT SECTION */}
+                    <div style={{ opacity: sectionVisible ? 1 : 0, transform: sectionVisible ? 'translateX(0)' : 'translateX(-100px)', transition: 'opacity 0.5s ease, transform 0.5s ease' }}>
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                            Partner with{' '}
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
+                                CareerByteCode
+                            </span>
+                        </h1>
+                        <p className="text-lg sm:text-xl text-gray-200 mb-8">
+                            Join leading organizations worldwide in upskilling their teams
+                            with cutting-edge IT training and certification programs.
                         </p>
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <button className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-all">
+                                <FontAwesomeIcon icon={faHandshake} className="mr-2" />
+                                Become a Partner
+                            </button>
+                            <button className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all">
+                                <FontAwesomeIcon icon={faCalendar} className="mr-2" />
+                                Schedule Demo
+                            </button>
+                        </div>
                     </div>
 
-                    {/* Expert Experience */}
-                    <div id="benefit-experience" className="text-center p-8">
-                        <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <FontAwesomeIcon icon={faUserTie} className="text-green-600 text-2xl" />
-                        </div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">Expert Experience</h3>
-                        <p className="text-gray-600">
-                            Collaborate with industry experts and gain hands-on training from top IT professionals.
-                        </p>
-                    </div>
 
-                    {/* Customization */}
-                    <div id="benefit-customization" className="text-center p-8">
-                        <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <FontAwesomeIcon icon={faCogs} className="text-yellow-600 text-2xl" />
+                    <div style={{ opacity: sectionVisible ? 1 : 0, transform: sectionVisible ? 'translateX(0)' : 'translateX(100px)', transition: 'opacity 0.5s ease, transform 0.5s ease' }}>
+                        <div id="default-carousel" className="relative w-full" data-carousel="static">
+                            <div className="relative h-[250px] sm:h-[300px] md:h-96 bordering overflow-hidden rounded-lg">
+                                <div className="duration-700 ease-in-out" data-carousel-item>
+                                    <img src={partner3} 
+                                    style={{ ...imgCSS }}
+                                    className="block w-full" alt="Slide 1" />
+                                </div>
+                            </div>
                         </div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">Customization</h3>
-                        <p className="text-gray-600">
-                            Tailor your training programs to meet the specific needs of your organization and employees.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -52,4 +84,4 @@ const CommunitySection4 = () => {
     );
 };
 
-export default CommunitySection4;
+export default Enterprise;
