@@ -18,12 +18,12 @@ const Navbar = () => {
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
     >
-      <div className="w-full flex flex-wrap justify-between items-baseline mx-auto p-4">
+      <div className="w-[98%]  flex flex-wrap justify-between items-baseline mx-auto p-4">
 
         {/* Logo + Icon */}
         <Link to="/" className="flex items-center space-x-3">
-          <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm text-center me-2 mb-2">
-            <FontAwesomeIcon icon={faCode} />
+          <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm text-center me-2 mb-2 cursor-pointer">
+            <FontAwesomeIcon className='py-2 w-8' icon={faCode} />
           </button>
           <span className="text-gray-900 font-bold dark:text-white">CareerByteCode</span>
         </Link>

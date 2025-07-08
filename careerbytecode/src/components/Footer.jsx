@@ -14,7 +14,7 @@ import {
 
 const Footer = () => {
     return (
-        <footer id="footer" className="bg-gray-900 text-white py-16">
+        <footer id="footer" className="bg-gray-900 text-white py-16 mt`-[410px]">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     <div>
@@ -70,7 +70,7 @@ const Footer = () => {
                             <input
                                 type="email"
                                 placeholder="Enter email"
-                                className="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-primary"
+                                className="flex-1 w-[50%] px-2 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-primary"
                             />
                             <button className="px-4 py-2 bg-primary rounded-r-lg hover:bg-primary/90 text-white">
                                 <FontAwesomeIcon icon={faPaperPlane} />

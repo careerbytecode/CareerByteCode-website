@@ -36,13 +36,13 @@ const EnterpriseSection3 = () => {
     }, []);
 
     const animatedStyle = {
-        transform: visible ? 'translateY(0)' : 'translateY(100px)',
+        transform: visible ? 'translateY(0)' : 'translateY(50px)',
         opacity: visible ? 1 : 1,
         transition: 'all 1s ease-in-out'
     };
 
     return (
-        <section id="partnership-types" className="py-20 bg-white">
+        <section id="partnership-types" className="py-20 my-[50px] bg-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="text-center mb-16" ref={sectionRef} style={animatedStyle}>
                     <h2 className="text-4xl font-bold text-gray-900 mb-4">Partnership Programs</h2>

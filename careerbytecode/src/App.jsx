@@ -13,15 +13,17 @@ import EnterpriseSection2 from './enterpriseComponent/enterpriseSection2';
 import EnterpriseSection3 from './enterpriseComponent/EnterpriseSection3';
 import EnterpriseSection4 from './enterpriseComponent/EnterpriseSection4';
 import Community from './communityComponent/Community';
-import NavbarCommunity from './communityComponent/NavbarCommunity'; 
+import NavbarCommunity from './communityComponent/NavbarCommunity';
 import CommunitySection2 from './communityComponent/communitySection2';
 import CommunitySection3 from './communityComponent/CommunitySection3';
 import CommunitySection4 from './communityComponent/CommunitySection4';
-import ChapterNavbar from './ChapterComponents/chapterNavbar';
+import ChapterSection1 from './ChapterComponents/ChapterSection1';
+import ChapterSection2 from './ChapterComponents/ChapterSection2';
+import ChapterSection3 from './ChapterComponents/ChapterSection3';
 const App = () => {
     return (
         <Router>
-         
+
             <div className="pt-20"> {/* space for fixed navbar */}
                 <Routes>
                     <Route path="/" element={
@@ -40,9 +42,9 @@ const App = () => {
                             <Navbar />
                             <Enterprise />
                             <Home />
-                           <EnterpriseSection2/>
-                           <EnterpriseSection3/>
-                           <EnterpriseSection4/>
+                            <EnterpriseSection2 />
+                            <EnterpriseSection3 />
+                            <EnterpriseSection4 />
                             <Footer />
                         </>
                     } />
@@ -50,19 +52,27 @@ const App = () => {
                     <Route path="/community" element={
                         <>
                             <NavbarCommunity />
-                           <Community/>
-                           <CommunitySection2/>
-                           <CommunitySection3/>
-                           <CommunitySection4/>
+                            <Community />
+                            <CommunitySection2 />
+                            <CommunitySection3 />
+                            <CommunitySection4 />
                             <Footer />
                         </>
                     } />
                     <Route path="/chapter" element={
                         <>
-                          <ChapterNavbar />
+                            <NavbarCommunity />
+                            <ChapterSection1 />
+                            <ChapterSection2 />
+                            <ChapterSection3/>
+                            <EnterpriseSection3 />
+                                                
+                            <EnterpriseSection2 />
+                            <Home />
+                            <Footer/>
                         </>
                     } />
-                    
+
                 </Routes>
             </div>
         </Router>
