@@ -5,7 +5,7 @@ import amazon from '../img/enterpriseImg/amazon.png'
 import cloud from '../img/enterpriseImg/cloud.png'
 import microsoft from '../img/enterpriseImg/microsoft.png'
 import ibm from '../img/enterpriseImg/ibm.png'
-import salesforce from '../img/enterpriseImg/sales.png'
+import salesforce from '../img/enterpriseImg/Sales.png'
 import oracle from '../img/enterpriseImg/oracle.png'
 const EnterpriseSection2 = () => {
 
