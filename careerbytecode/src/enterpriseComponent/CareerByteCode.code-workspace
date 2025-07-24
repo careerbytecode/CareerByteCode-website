@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../../Videos/nigeri/New Nigeria/website-html-files"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "website-html-files"
+	}
+}

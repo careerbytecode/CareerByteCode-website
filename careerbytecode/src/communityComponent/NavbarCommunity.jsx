@@ -44,11 +44,11 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faMoon} />
           </button>
 
-          <button className="hidden lg:flex items-center border border-blue-600 text-sm font-medium text-gray-900 rounded-lg h-10 hover:bg-blue-600 hover:text-white px-5">
+          <button className="hidden cursor-pointer lg:flex items-center border border-blue-600 text-sm font-medium text-gray-900 rounded-lg h-10 hover:bg-blue-600 hover:text-white px-5">
             Sign in
           </button>
 
-          <button className="hidden lg:block bg-blue-600 text-white rounded-lg px-4 py-2 text-sm hover:bg-blue-800">
+          <button className="hidden cursor-pointer lg:block bg-blue-600 text-white rounded-lg px-4 py-2 text-sm hover:bg-blue-800">
             Start Learning
           </button>
 
@@ -70,8 +70,8 @@ const Navbar = () => {
               <li><Link to="/mentorship" className="hover:text-blue-600">Use-Cases</Link></li>
               <li><Link to="/enterprise" className="hover:text-blue-600">Partners</Link></li>
               <li><Link to="/community" className="hover:text-blue-600">Mentorship</Link></li>
-              <li><button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Start Learning</button></li>
-              <li><button className="w-full border border-blue-600 text-blue-600 py-2 rounded-lg hover:bg-blue-600 hover:text-white">Sign in</button></li>
+              <li><button className="w-full cursor-pointer bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Start Learning</button></li>
+              <li><button className="w-full cursor-pointer border border-blue-600 text-blue-600 py-2 rounded-lg hover:bg-blue-600 hover:text-white">Sign in</button></li>
             </ul>
           </div>
         )}

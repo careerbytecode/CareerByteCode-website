@@ -83,7 +83,7 @@ const EnterpriseSection4 = () => {
                         <div className="text-center">
                             <button
                                 type="submit"
-                                className="px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition-all"
+                                className="px-8 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-primary/90 transition-all  hover:bg-blue-800 cursor-pointer"
                             >
                                 Submit Request
                             </button>

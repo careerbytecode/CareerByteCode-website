@@ -111,7 +111,7 @@ const EnterpriseSection3 = () => {
                                 Ongoing support & updates
                             </li>
                         </ul>
-                        <button className="w-full py-3 secondary text-white rounded-lg font-semibold hover:bg-secondary/90 transition-all">
+                        <button className="w-full py-3 secondary text-white cursor-pointer rounded-lg font-semibold hover:bg-secondary/90 transition-all">
                             Learn More
                         </button>
                     </div>
@@ -143,7 +143,7 @@ const EnterpriseSection3 = () => {
                                 Technical support team
                             </li>
                         </ul>
-                        <button className="w-full py-3 accent text-white rounded-lg font-semibold hover:bg-accent/90 transition-all">
+                        <button className="w-full py-3 accent text-white cursor-pointer rounded-lg font-semibold hover:bg-accent/90 transition-all">
                             Learn More
                         </button>
                     </div>

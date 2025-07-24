@@ -55,11 +55,11 @@ const Enterprise = () => {
                             with cutting-edge IT training and certification programs.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-all">
+                            <button className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-all cursor-pointer">
                                 <FontAwesomeIcon icon={faHandshake} className="mr-2" />
                                 Become a Partner
                             </button>
-                            <button className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all">
+                            <button className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold cursor-pointer hover:bg-white hover:text-blue-600 transition-all">
                                 <FontAwesomeIcon icon={faCalendar} className="mr-2" />
                                 Schedule Demo
                             </button>

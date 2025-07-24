@@ -37,10 +37,10 @@ const Section4 = () => {
                 <h2 className="text-4xl font-bold text-white mb-6">Ready to Transform Your Career?</h2>
                 <p className="text-xl text-blue-100 mb-8">Join thousands of professionals who've accelerated their tech careers with CareerByteCode</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-all">
+                    <button className="px-8 cursor-pointer py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-all">
                       Start Free Trial
                   </button>
-                  <button className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all">
+                    <button className="px-8 cursor-pointer py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all">
                       Partner With Us
                   </button>
               </div>

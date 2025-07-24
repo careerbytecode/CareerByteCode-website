@@ -96,14 +96,14 @@ const Carousel = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <button
-                        className="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 flex items-center"
+                        className="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 cursor-pointer flex items-center"
                         aria-label="Start Learning Free"
                     >
                         {currentSlide.button1Icon}
                         {currentSlide.button1}
                     </button>
                     <button
-                        className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-500 flex items-center"
+                        className="px-8 cursor-pointer py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-500 flex items-center"
                         aria-label="Join Community"
                     >
                         {currentSlide.button2Icon}
