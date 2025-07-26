@@ -17,6 +17,7 @@ import NavbarCommunity from './communityComponent/NavbarCommunity';
 import CommunitySection2 from './communityComponent/CommunitySection2';
 import CommunitySection3 from './communityComponent/CommunitySection3';
 import CommunitySection4 from './communityComponent/CommunitySection4';
+import Login from './components/Login';
 import ChapterSection1 from './ChapterComponents/ChapterSection1';
 import ChapterSection2 from './ChapterComponents/ChapterSection2';
 import ChapterSection3 from './ChapterComponents/ChapterSection3';
@@ -71,6 +72,16 @@ const App = () => {
                             <Footer/>
                         </>
                     } />
+                    <Route
+                    path="/login"
+                    element={
+                        <>
+                            <Navbar />
+                            <Login />
+                            <Footer />
+                        </>
+                    }
+                    />
 
                 </Routes>
             </div>

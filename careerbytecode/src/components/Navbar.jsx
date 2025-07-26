@@ -21,7 +21,7 @@ const Navbar = () => {
 
         {/* Logo + Icon */}
         <Link to="/" className="flex items-center space-x-3">
-          <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 cursor-pointer hover:bg-gradient-to-br font-medium rounded-lg text-sm text-center me-2 mb-2">
+          <button type="button" className="text-white cursor-pointer  backgroundcolor  font-medium rounded-lg text-sm text-center me-2 mb-2">
             <FontAwesomeIcon className='w-8 py-2 h-20' icon={faCode} />
           </button>
           <span className="text-gray-900 font-bold dark:text-white">CareerByteCode</span>
@@ -43,10 +43,10 @@ const Navbar = () => {
           </button>
 
           <button className="hidden lg:flex items-center border  border-blue-600 text-sm font-medium text-gray-900 cursor-pointer rounded-lg h-10 hover:bg-blue-600 hover:text-white px-5">
-            Sign in
+            <Link to="/login">Sign in</Link>
           </button>
 
-          <button className="hidden lg:block bg-blue-600 text-white cursor-pointer rounded-lg px-4 py-2 text-sm hover:bg-blue-800">
+          <button className="hidden lg:block backgroundcolor  text-white cursor-pointer rounded-lg px-4 py-2 text-sm hover:bg-blue-800">
             Start Learning
           </button>
 
@@ -67,8 +67,8 @@ const Navbar = () => {
               <li><Link to="/mentorship" className="hover:text-blue-600">Mentorship</Link></li>
               <li><Link to="/enterprise" className="hover:text-blue-600">Enterprise</Link></li>
               <li><Link to="/community" className="hover:text-blue-600">Community</Link></li>
-              <li><button className="w-full bg-blue-600 text-white cursor-pointer py-2 rounded-lg hover:bg-blue-700">Start Learning</button></li>
-              <li><button className="w-full border border-blue-600 text-blue-600 py-2 rounded-lg cursor-pointer hover:bg-blue-600 hover:text-white">Sign in</button></li>
+              <li><button className="w-full backgroundcolor text-white cursor-pointer py-2 rounded-lg hover:bg-blue-700">Start Learning</button></li>
+              <li><button className="w-full border border-blue-600 text-blue-600 py-2 rounded-lg cursor-pointer hover:bg-blue-600 hover:text-white"> <Link to="/login">Sign in</Link></button></li>
             </ul>
           </div>
         )}
